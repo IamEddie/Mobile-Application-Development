@@ -1,0 +1,41 @@
+{
+    "name": "Transporter Progressive Web App",
+    "short_name": "Transporter",
+    "description": "Progressive Web App that lists routes submitted to the trains scheduling system.",
+    "icons": [
+        {
+            "src": "icon/train.png",
+            "sizes": "200x200",
+            "type": "image/png"
+        },
+        {
+            "src": "train-2.jpeg",
+            "sizes": "275x183",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "train-3.png",
+            "sizes": "225x225",
+            "type": "image/png"
+        },
+        {
+            "src": "train-4.png",
+            "sizes": "216x233",
+            "type": "image/png"
+        },
+        {
+            "src": "train-5.png",
+            "sizes": "225x225",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "train-6.png",
+            "sizes": "225x225",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/Mobile-Application-Development/Assignment 3/index.html",
+    "display": "fullscreen",
+    "theme_color": "#B12A34",
+    "background_color": "#B12A34"
+}

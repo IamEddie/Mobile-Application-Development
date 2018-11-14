@@ -5,14 +5,14 @@ var app = new Vue({
         pswd: '',
         usernameError: false,
         passwordError: false,
-        usernameErrorMessage: '',
+        usernameErrorMessage: [],
         passwordErrorMessage: ''
     },
     methods: {
         showValidation: function (){
                 this.usernameError = false
                 this.passwordError = false
-                this.usernameErrorMessage = ''
+                this.usernameErrorMessage = []
 
             if(this.pswd.length < 6){
                    
@@ -20,11 +20,15 @@ var app = new Vue({
             
             if(this.usname <= 3){
                 this.usernameError = true
-               this.usernameErrorMessage = 'Username is too short'
+               this.usernameErrorMessage.push({msg: 'Username is too short', date: Date.now()})
+               var passwordErrorMessage = {
+                   msg: 'new Error Message',
+                   date: Date.now()
+               }
             }
             if(!this.usname.includes('@')){
                 this.usernameError = true
-                usernameErrorMessage = 'Username must be a valid email address'
+                usernameErrorMessage.push({msg: 'Username must be a valid email address', date: Date.now()}) 
             }
         }
     }

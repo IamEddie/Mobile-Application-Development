@@ -9,7 +9,13 @@
                 <div class="field">
                     <label class="label">Username</label>
                     <input v-model="usname" class="input" v-bind:class="{'is-danger':usernameError}" type="text" id="username" />
-                    <div class="has-text-danger" v-if="usernameError">{{usernameErrorMessage}}</div>
+                    <!--<div class="has-text-danger" v-if="usernameError">{{usernameErrorMessage}}</div>-->
+                    <ul>
+                        <li v-for="error in usernameErrorMessage">
+                            {{error.msg}}
+                            <span></span>
+                        </li>
+                    </ul>
                 </div>
                 
                 <div class="field">
